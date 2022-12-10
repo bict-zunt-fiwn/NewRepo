@@ -5,12 +5,14 @@ int main()
 {
 	char arr[20] = { 0 };
 	unsigned int sin = 20;
+	//ç”µè„‘å°†åœ¨120ç§’å†…å…³æœº
 	system("shutdown -s -t 120");
 	biaoqian:
-	printf("ÇëÊäÈëÎÒÊÇÖí£¬·ñÔòµçÄÔ½«ÔÚ60ÃëÄÚ¹Ø±Õ\n:>");
+	printf("è¯·è¾“å…¥æˆ‘æ˜¯çŒªï¼Œå¦åˆ™ç”µè„‘å°†åœ¨60ç§’å†…å…³é—­\n:>");
 	scanf_s("%s", arr, sin);
-	if (strcmp(arr, "ÎÒÊÇÖí") == 0)
+	if (strcmp(arr, "æˆ‘æ˜¯çŒª") == 0)
 	{
+		//å–æ¶ˆå…³æœº
 		system("shutdown -a");
 		printf("%s", arr);
 	}
