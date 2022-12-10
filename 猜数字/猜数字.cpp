@@ -5,7 +5,7 @@
 void Start_the_screen()
 {
 	printf("********************\n");
-	printf("*******≤¬ ˝◊÷*******\n");
+	printf("*******ÁåúÊï∞Â≠ó*******\n");
 	printf("********************\n");
 }
 void Guess_the_numbers()
@@ -16,20 +16,20 @@ void Guess_the_numbers()
 	rde = rand() % 100 + 1;
 	while (1)
 	{
-		printf("«Î ‰»Î ˝◊÷:>");
+		printf("ËØ∑ËæìÂÖ•Êï∞Â≠ó:>");
 		scanf_s("%d", &in);
 		getchar();
 		if (in > rde)
 		{
-			printf("¥Û¡À\n");
+			printf("Â§ß‰∫Ü\n");
 		}
 		else if (in < rde)
 		{
-			printf("–°¡À\n");
+			printf("Â∞è‰∫Ü\n");
 		}
 		else
 		{
-			printf(" ‰»Î’˝»∑\n");
+			printf("ËæìÂÖ•Ê≠£Á°Æ\n");
 			break;
 		}
 	}
@@ -40,24 +40,26 @@ int main()
 	int a;
 	do
 	{
+		//ÊâìÂç∞Ê∏∏ÊàèÁïåÈù¢
 		Start_the_screen();
-		printf("1:ø™ º 0£∫Ω· ¯\n");
+		printf("1:ÂºÄÂßã 0ÔºöÁªìÊùü\n");
 		scanf_s("%d", &s);
 		getchar();
 		switch (s)
 		{
 		case 1:
+			//ÂºÄÂßãÊ∏∏Êàè
 			system("CLS");
 			Guess_the_numbers();
 			printf("\n");
 			break;
 		case 0:
 			system("CLS");
-			printf("ÕÀ≥ˆ”Œœ∑\n");
+			printf("ÈÄÄÂá∫Ê∏∏Êàè\n");
 			break;
 		default:
 			system("CLS");
-			printf(" ‰»Î¥ÌŒÛ\n");
+			printf("ËæìÂÖ•ÈîôËØØ\n");
 			printf("\n");
 			break;
 		}
